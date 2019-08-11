@@ -7,8 +7,8 @@ configure_file(
     @ONLY
 )
 
-find_package(catkin REQUIERD COMPONENTS)
-catking_package()
+#find_package(catkin REQUIERD COMPONENTS)
+#catkin_package()
 
 
 #----- INSTALL ------
