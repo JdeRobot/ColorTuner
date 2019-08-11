@@ -22,6 +22,8 @@ import sys, os
 import yaml
 from .properties import Properties
 
+rosversion = os.environ["ROS_VERSION"]
+ser = int(rosversion)
 
 def findConfigFile(filename):
     '''
@@ -64,8 +66,10 @@ def load(filename):
         print ('loading Config file %s' %(filepath))
 
         with open(filepath, 'r') as stream:
-            #cfg=yaml.load(stream,Loader=yaml.FullLoader) #For ROS1
-            cfg=yaml.load(stream) #For ROS2
+            if (ser == 1):
+                cfg=yaml.load(stream,Loader=yaml.FullLoader) #For ROS1
+            if (ser == 2):
+                cfg=yaml.load(stream) #For ROS2
 
             prop = Properties(cfg) 
     else:
