@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 #
 #  Copyright (C) 1997-2016 JDE Developers Team
 #
@@ -27,10 +27,7 @@ from sensors.cameraFilter import CameraFilter
 from gui.gui import MainWindow
 from PyQt5.QtWidgets import QApplication
 from PyQt5 import QtGui
-#import qdarkstyle
-
-
-
+import qdarkstyle
 
 import signal
 
@@ -43,7 +40,6 @@ if __name__ == '__main__':
     except IndexError:
         img_path=None
 
-    #starting comm
     jdrc= comm.init(cfg, 'ColorTuner')
 
     cameraCli = jdrc.getCameraClient("ColorTuner.Camera")

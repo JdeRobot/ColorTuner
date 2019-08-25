@@ -24,7 +24,7 @@ from PyQt5 import QtWidgets
 from filters.hsvFilter import HSVMAX, HSVMIN
 from filters.rgbFilter import RGBMAX, RGBMIN
 from filters.yuvFilter import YUVMAX, YUVMIN
-from hsvWidget import HsvWidget
+from .hsvWidget import HsvWidget
 WIDTH = 1340
 HEIGTH = 200
 

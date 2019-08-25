@@ -22,9 +22,9 @@
 from PyQt5.QtCore import pyqtSignal, Qt, QRect
 from PyQt5.QtGui import QPixmap, QImage, QColor
 from PyQt5.QtWidgets import QMainWindow, QGridLayout, QVBoxLayout, QHBoxLayout, QWidget, QPushButton, QGroupBox, QLabel, QToolTip, QAction, QDialog
-from myLabel import MyLabel
-from controlWidget import  ControlWidget
-from logoWidget import  LogoWidget
+from .myLabel import MyLabel
+from .controlWidget import  ControlWidget
+from .logoWidget import  LogoWidget
 import resources_rc
 import sys
 import cv2
@@ -130,8 +130,8 @@ class MainWindow(QMainWindow):
         self.filterImg.setFixedSize(self.IMAGE_COLS_MAX, self.IMAGE_ROWS_MAX)
 
 
-        print "size1 ", self.sourceImg.size()
-        print "size2 ", self.filterImg.size()
+        print ("size1 ", self.sourceImg.size())
+        print ("size2 ", self.filterImg.size())
 
 
         zoompixGroupBox = QGroupBox("Zoom x" + str(self.ZOOM_X))
@@ -273,7 +273,7 @@ class MainWindow(QMainWindow):
         return self.camera
 
     def setCamera(self,camera):
-        print camera
+        print (camera)
         self.camera = camera
 
     def getFilterName(self):
