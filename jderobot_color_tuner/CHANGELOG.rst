@@ -2,8 +2,8 @@
 Changelog for package jderobot_color_tuner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2019-09-03)
+------------------
 * Merge pull request `#6 <https://github.com/jderobot/colortuner/issues/6>`_ from pankhurivanjani/master
   Extending colorTuner to support both ROS1 and ROS2 via modified interface
 * changed config file for loading yaml file in ros1 and ros2 automatically
