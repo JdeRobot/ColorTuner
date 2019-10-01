@@ -2,6 +2,9 @@
 Changelog for package jderobot_color_tuner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.0.2 (2019-09-03)
 ------------------
 * Merge pull request `#6 <https://github.com/jderobot/colortuner/issues/6>`_ from pankhurivanjani/master
