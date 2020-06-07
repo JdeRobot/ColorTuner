@@ -68,6 +68,7 @@ def load(filename):
         with open(filepath, 'r') as stream:
             if (ser == 1):
                 cfg=yaml.load(stream,Loader=yaml.FullLoader) #For ROS1
+                #cfg=yaml.load(stream,Loader=yaml) #For ROS1
             if (ser == 2):
                 cfg=yaml.load(stream) #For ROS2
 

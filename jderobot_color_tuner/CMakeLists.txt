@@ -7,8 +7,13 @@ configure_file(
     @ONLY
 )
 
-find_package(catkin REQUIRED COMPONENTS)
-
+find_package(catkin REQUIRED COMPONENTS
+  image_transport
+  sensor_msgs
+  cv_bridge
+  rospy
+  std_msgs
+)
 
 catkin_package()
 
@@ -25,6 +30,7 @@ INSTALL(FILES colorTuner.py DESTINATION share/jderobot/python/colorTuner_py/ COM
 INSTALL(FILES resources_rc.py DESTINATION share/jderobot/python/colorTuner_py/ COMPONENT colortuner-python)
 INSTALL(FILES resources/HLSColorSpace.png DESTINATION share/jderobot/python/colorTuner_py/resources COMPONENT colortuner-python)
 
+
 # Install gui
 INSTALL (DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/gui DESTINATION share/jderobot/python/colorTuner_py COMPONENT colortuner-python PATTERN .svn EXCLUDE)
 # Install sensors
@@ -33,5 +39,9 @@ INSTALL (DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/sensors DESTINATION share/jderobo
 INSTALL (DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/filters DESTINATION share/jderobot/python/colorTuner_py COMPONENT colortuner-python PATTERN .svn EXCLUDE)
 INSTALL (FILES ${CMAKE_CURRENT_SOURCE_DIR}/colorTuner_py.yml DESTINATION ${CMAKE_INSTALL_PREFIX}/share/jderobot/conf COMPONENT colortuner-python)
 #install the dark theme style sheet
-INSTALL(FILES QDarkStyleSheet/qdarkstyle/pyqt5_style_rc.py DESTINATION ${JDEROBOT_PYTHON2_MODULE_PATH}/qdarkstyle/ COMPONENT colortuner-python)
-INSTALL(FILES QDarkStyleSheet/qdarkstyle/__init__.py DESTINATION ${JDEROBOT_PYTHON2_MODULE_PATH}/qdarkstyle/ COMPONENT colortuner-python)
+INSTALL(FILES QDarkStyleSheet/qdarkstyle/pyqt5_style_rc.py DESTINATION share/jderobot/python/colorTuner_py COMPONENT colortuner-python)
+INSTALL(FILES QDarkStyleSheet/qdarkstyle/__init__.py DESTINATION share/jderobot/python/colorTuner_py COMPONENT colortuner-python)
+
+#INSTALL(FILES QDarkStyleSheet/qdarkstyle/pyqt5_style_rc.py DESTINATION ${JDEROBOT_PYTHON2_MODULE_PATH}/qdarkstyle/ COMPONENT colortuner-python)
+#INSTALL(FILES QDarkStyleSheet/qdarkstyle/__init__.py DESTINATION ${JDEROBOT_PYTHON2_MODULE_PATH}/qdarkstyle/ COMPONENT colortuner-python)
+
