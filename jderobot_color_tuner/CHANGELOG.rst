@@ -2,8 +2,8 @@
 Changelog for package jderobot_color_tuner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.4 (2020-06-07)
+------------------
 * Merge pull request `#17 <https://github.com/JdeRobot/ColorTuner/issues/17>`_ from JdeRobot/test
   Merge the testing branch into master
 * Merge pull request `#16 <https://github.com/JdeRobot/ColorTuner/issues/16>`_ from pankhurivanjani/test
