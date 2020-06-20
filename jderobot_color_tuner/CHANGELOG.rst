@@ -2,6 +2,18 @@
 Changelog for package jderobot_color_tuner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update package.xml
+* Update package.xml
+* Update package.xml
+* Contributors: Pankhuri Vanjani
+
+* Update package.xml
+* Update package.xml
+* Update package.xml
+* Contributors: Pankhuri Vanjani
+
 0.0.4 (2020-06-07)
 ------------------
 * Merge pull request `#17 <https://github.com/JdeRobot/ColorTuner/issues/17>`_ from JdeRobot/test
