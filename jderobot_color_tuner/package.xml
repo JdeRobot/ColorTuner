@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="1">
   <name>jderobot_color_tuner</name>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
   <description>The jderobot_color_tuner tool package</description>
 
   <maintainer email="pankhurivanjani@gmail.com">Pankhuri Vanjani</maintainer>

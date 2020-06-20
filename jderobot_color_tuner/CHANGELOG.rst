@@ -2,8 +2,8 @@
 Changelog for package jderobot_color_tuner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.5 (2020-06-20)
+------------------
 * Update package.xml
 * Update package.xml
 * Update package.xml
