@@ -137,7 +137,7 @@ footer:
       url: "https://twitter.com/unibotics"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/JdeRobot/camViz"
+      url: "https://github.com/JdeRobot/ColorTuner"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
